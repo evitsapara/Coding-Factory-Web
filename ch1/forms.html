@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>My First Form</h2>
+    <form>
+        <div>
+            <input type="radio" name="gender" value="male" id="fldmale">
+            <label for="fldmale">Male</label><br>
+            <input type="radio" name="gender" value="female" id="fldfemale" checked>
+            <label for="fldfemale">Female</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="vehicle1" value="bicyle" id="fldbicycle" checked>
+            <label for="fldbicycle">Bicycle</label><br>
+            <input type="checkbox" name="vehicle2" value="motorcycle" id="fldmotorcycle">
+            <label for="fldmotorcycle">Motorcycle</label><br>
+            <input type="checkbox" name="vehicle3" value="car" id="fldcar">
+            <label for="fldcar">Car</label>
+        </div>
+
+        <div>
+            <label for="fldnationality">Nationality</label>
+            <select name="nationality" id="fldnationality">
+                <option value="" disabled selected>Choose a Nationality</option>
+                <option value="greek">Greece</option>
+                <option value="english">United Kingdom</option>
+                <option value="spanish">Spain</option>
+            </select>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Perfonal Information</legend>
+                <div>
+                    <label for="fldfirstname">First Name</label>
+                    <input type="text" name="firstname" id="fldfirstname" placeholder="Insert your First Name" minlenght="3" maxlength="15" required>
+                </div>
+                <div>
+                    <label for="fldworkexperience">Years of Work Experience</label>
+                    <input type="number" name="work-experience" id="fldworkexperience" min="3" max="20">
+                </div>
+                <div>
+                    <label for="fldemail">Email</label>
+                    <input type="email" name="email" id="fldemail" placeholder="Insert an Email Address">
+                </div>
+            </fieldset>
+        </div>
+
+    <div>
+        <label for="fldmessage">Write your message:</label>
+        <textarea name="message" id="fldmessage" rows="10" cols="30" placeholder="Insert your message"></textarea>
+    </div>
+
+    <br>
+
+    <div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </div>
+    </form>
+
+</body>
+</html>
